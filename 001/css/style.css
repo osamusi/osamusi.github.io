@@ -1,0 +1,237 @@
+@charset="UTF-8";
+#nav {
+  text-align: right;
+  overflow: hidden;
+}
+#nav ul {
+  list-style-type: none;
+}
+#nav ul li {
+  display: inline-block;
+}
+#nav ul li a {
+  text-decoration: none;
+}
+
+/*ボタン共通*/
+
+.button {
+  display: inline-block;
+  width: 120px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  border-radius: 25px 25px;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+/*    ボタンの動作CSS*/
+
+.button {
+  /*
+    display: block;
+    width: 200px;
+    height: 50px;
+*/
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  /*	border: 2px solid #333;*/
+  border: none;
+  /*      color: aquamarine;*/
+  color: lime;
+  line-height: 50px;
+  overflow: hidden;
+  /*  text-decoration: none;*/
+}
+.button:hover {
+  color: #fff;
+}
+.button::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.button:hover::after {
+  background: lime;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-radius: 45px 45px;
+}
+
+/*メイン画像*/
+
+#graphic {
+  width: 880px;
+  height: 540px;
+  margin: 0 auto 30px auto;
+}
+#graphic ul {
+  list-style: none;
+  padding-left: 0;
+}
+#graphic ul li {
+  display: none;
+  position: absolute;
+}
+#graphic ul li.now {
+  display: block;
+}
+#gallery {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  /*  text-align: center;*/
+}
+#gallery figure {
+  /*  display: inline-block;*/
+  margin: 5% 0 0 5%;
+  float: left;
+}
+
+/*figureに関するギミック*/
+
+figure {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 280px;
+  border-radius: 180px;
+}
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+figcaption h3,
+figcaption p {
+  position: absolute;
+  left: -100%;
+  width: 260px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+}
+figcaption h3 {
+  top: 30px;
+}
+figcaption p {
+  top: 75px;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:hover figcaption h3,
+figure:hover figcaption p {
+  left: 20px;
+}
+figure:hover figcaption h3 {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+figure:hover figcaption p {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s;
+}
+#news {
+  height: 200px;
+  margin: 10% 10% 20% 10%;
+  padding: 20px;
+  border-top: 1px dotted lime;
+  border-bottom: 1px dotted lime;
+  overflow: auto;
+}
+#kongetu {
+  text-align: center;
+  width: auto;
+  margin-bottom: 10%;
+}
+
+/*フォーム関係*/
+
+#contents {
+  margin: 10% 10%;
+}
+#contents form {
+  margin: 50px 0;
+  width: 90%;
+}
+#contents form label {
+  display: block;
+  width: 90%;
+  float: left;
+}
+#contents form input[type="text"],
+#contents form input[type="email"],
+#contents form input[type="submit"],
+#contents form textarea {
+  box-sizing: border-box;
+  width: 90%;
+  clear: both;
+}
+#contents form input[type="submit"] {
+  width: 150px;
+}
+
+/*フッター*/
+
+footer {
+  /*  text-align: center;*/
+  margin: 10% 10%;
+  width: 90%;
+  color: #000;
+}
+footer p img {
+  text-align: center;
+}
+
+/*戻るボタン*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50%;
+}
+#page-top a {
+  background: lime;
+  text-decoration: none;
+  color: #fff;
+  width: 72px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 45px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: orange;
+  opacity: 0.7;
+}

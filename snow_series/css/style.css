@@ -1,0 +1,167 @@
+/*
+#nav ul {
+text-decoration-line: none;
+  
+  overflow: hidden;
+}
+
+#nav ul li a {
+  float: left;
+  color: red;
+}
+*/
+
+
+
+
+
+
+
+
+#nav {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#nav ul {
+  list-style-type: none;
+}
+#nav ul li {
+  display: inline-block;
+}
+#nav ul li a {
+  margin: 100px 50px;
+  padding: auto;
+  
+  text-decoration: none;
+  color: red;
+}
+
+
+
+
+
+
+#main {
+  margin: 30% 10%;
+}
+
+#main h1,p {
+  color: red;
+}
+
+
+
+#hero {
+float: left;
+  width: 80%;
+  margin: auto 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*戻るボタン*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50%;
+}
+
+
+
+
+
+
+
+
+/*おためしゆきだるま*/
+
+
+
+#page-top a {
+  
+  margin-top: 90px;
+  
+  background-image: url(../images/snowdaruma.png);
+  background-repeat: no-repeat;
+  
+/*  background: #fff;*/
+  
+  text-decoration: none;
+  color: red;
+  width: 100px;
+  height: 130px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  
+  line-height: 90px;
+  
+/*  border-radius: 45px;*/
+}
+
+
+
+
+
+#page-top a:hover {
+    background-image: url(../images/snowdarumared.png);
+  background-repeat: no-repeat;
+
+  text-decoration: none;
+  color: #fff;
+/*  background: red;*/
+  opacity: 0.4;
+}
+
+
+
+/*おためしゆきだるまここまで*/
+
+
+
+
+
+
+
+
+
+
+/*
+#page-top a {
+  background: #fff;
+  text-decoration: none;
+  color: red;
+  width: 72px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 45px;
+}
+*/
+/*
+#page-top a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  opacity: 0.6;
+}
+*/
+
+
+
+
+
+
+

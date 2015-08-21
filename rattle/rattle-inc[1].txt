@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="google-site-verification" content="YdoSQIwpxQsxC00d6wfi1615WdzRXhFXQN4BPMC9dKI" />
+<title>rattle</title>
+<meta name="Keywords" content="株式会社ラトル,rattle,デザイン,インテリア,グラフィック,雑誌,広告,ショップ,東京都,世田谷区,二子玉川,アクセ,雑貨" />
+</head>
+
+<body>
+<div align="center"><img src="index_top.jpg" alt="index" width="1024" height="768" /></div> 
+</body>
+</html>

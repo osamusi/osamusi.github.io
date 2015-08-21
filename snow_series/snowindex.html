@@ -1,0 +1,248 @@
+<!DOCUTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>snowtest</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/common_snow.css" />
+
+  <script src="js/snow.js"></script>
+  <script src="js/common.js"></script>
+  
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/button.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <!--  ローディング-->
+  <style>
+    /*
+      body {
+              animation: slide 10s infinite;
+      }
+*/
+    
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      animation: fadeout 1s 2s both;
+      /*      animation-name: fadeout;*/
+      animation-duration: 3s;
+      animation-delay: 4.5s;
+      animation-fill-mode: both;
+      background-color: silver;
+    }
+    
+    @keyframes fadeout {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden
+      }
+    }
+    
+    #message {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      margin: calc(50vh - 100px) auto;
+      text-align: center;
+      line-height: 200px;
+      font-size: 125%;
+      color: silver;
+      animation: kaiten 9s infinite;
+    }
+    
+    @keyframes kaiten {
+      0% {
+        transform: rotate(0deg);
+        border-radius: 50px 50px
+      }
+      10% {
+        transform: rotate(30deg);
+        border-radius: 50px 50px
+      }
+      20% {
+        transform: rotate(-30deg);
+        border-radius: 70px 70px
+      }
+      30% {
+        transform: rotate(40deg);
+        border-radius: 75px 75px
+      }
+      40% {
+        transform: rotate(-40deg);
+        border-radius: 95px 95px
+      }
+      50% {
+        transform: rotate(60deg);
+        border-radius: 100px 100px;
+      }
+      75% {
+        transform: rotate(-65deg);
+        border-radius: 100px 100px;
+      }
+      100% {
+        transform: rotate(0deg);
+        border-radius: 100px 100px;
+      }
+      /*      100%{transform: rotate(0deg);}*/
+    }
+    /*
+    h1 {
+      transition: ;
+    }
+*/
+    
+    body {
+      animation-duration: 10s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+      /*  animation-iteration-count: infinite;*/
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    /*
+          @keyframes slide {
+      0% {
+        background-color: silver;
+      }
+      20% {
+        background-color: #D3D3D3;
+      }
+      40% {
+        background-color: silver;
+      }
+      60% {
+        background-color: DarkGray;
+      }
+      90% {
+        width: 100%;
+        background-image: url(images/lake001.jpg);
+      }
+      100% {
+                width: 100%;
+        background-image: url(images/lake002.jpg);
+      }
+    }
+      
+      
+*/
+
+  </style>
+
+  <!--  ローディングローディング終了-->
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+    
+    <div id="nav">
+    <ul>
+      <li><a class="" href="#">001</a></li>
+      <li><a class="" href="#hero">002</a></li>
+      <li><a class="" href="#">003</a></li>
+      <li><a class="" href="#">004</a></li>
+      <li><a class="" href="#">005</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="loading">
+    <div id="message">ゆきがしんしん…</div>
+  </div>
+
+  <div id="main">
+    <a><img src="images/rogosnow.png"></a>
+    <a href="#"><h1>みだし</h1></a>
+    <p>ぶんしょう。。。。。</p>
+    <p>ぶんしょう。。。。。</p>
+    <p>ぶんしょう。。。。。</p>
+    <p>ぶんしょう。。。。。</p>
+    <p>ぶんしょう。。。。。</p>
+    <p>ぶんしょう。。。。。</p>
+  </div>
+
+
+  <!--  ローディングローディング終了-->
+
+
+
+
+
+  <div id="hero">
+    <p>
+      <img src="images/lake001.jpg">
+    </p>
+  </div>
+
+
+
+
+<div id="footer">
+  
+  <p>とりあえず</p>
+  <p>とりあえず</p>
+  <p>とりあえず</p>
+  <p>とりあえず</p>
+  <p>とりあえず</p>
+  <p>とりあえず</p>
+  </div>
+
+
+
+  
+  
+<!--  ページトップボタン-->
+  <p id="page-top"><a href="#wrapper">PAGE TOP</a></p>
+
+</body>
+
+
+</html>
